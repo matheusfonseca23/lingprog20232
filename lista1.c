@@ -2,22 +2,108 @@
 #include <stdlib.h>
 #include <math.h>
 
-/*
+/*  
 Exercícios sobre os comandos básicos em C
 */
 
 //1. Faça um programa que imprima o seu nome.
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    printf("Eu me chamo Valdomiro Paes de Barro");
+
+    return 0;
+}
+
 //2. Faça um programa que imprima o produto dos valores 30 e 27.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float resultado;
+
+int main()
+{
+    resultado = 30*2;
+    printf("O resultado é %.2f",resultado);
+
+    return 0;
+}
 
 //3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float media;
+
+int main()
+{
+    media = (5+8+12)/3;
+    printf("A média é %.2f",media);
+
+    return 0;
+}
+
 //4. Faça um programa que leia e imprima um número inteiro.
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int numero;
+
+int main()
+{
+    printf("Digite um número: ");
+    scanf("%d",&numero);
+    printf("O número apresentado é: %d",numero);
+
+    return 0;
+}
 //5. Faça um programa que leia dois números reais e os imprima.
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int numero,numero1;
+
+int main()
+{
+    printf("Digite o primeiro número: ");
+    scanf("%d",&numero);
+     printf("Digite o segundo número: ");
+    scanf("%d",&numero1);
+    printf("Os números apresentados são: %d e %d",numero,numero1);
+
+    return 0;
+}
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int numero,antecessor,sucessor;
+
+
+int main()
+{
+    printf("Digite o primeiro número: ");
+    scanf("%d",&numero);
+  antecessor= numero-1;
+  sucessor= numero+1;
+    printf("O número apresentado foi: %d, o eu antecessor é: %d, e o seu sucessor é: %d",numero,antecessor,sucessor);
+
+    return 0;
+}
+
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
