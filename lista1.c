@@ -108,6 +108,24 @@ int main()
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
 
+#include <stdio.h>
+char nome[50], end[50],tel[50];
+int main()
+{
+    printf("Digite seu nome: ");
+    scanf(" %50[^\n]",&nome);
+    printf("Digite seu endereço: ");
+     scanf(" %50[^\n]",&end);
+     printf("Digite seu telefone: ");
+     scanf(" %50[^\n]",&tel);
+    
+    printf("nome: %s",nome);
+    printf("\nEndereço: %s",end);
+     printf("\nTelefone: %s",tel);
+
+    return 0;
+}
+
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
 
