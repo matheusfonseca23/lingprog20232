@@ -220,7 +220,23 @@ int main()
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float numero,quadrado;
+
+int main()
+{
+    printf("Digite o um número: ");
+    scanf("%f",&numero);
+     
+    quadrado = numero*numero;
+ 
+    printf("O quadrado é: %.2f ",quadrado);
+     
+    return 0;
+}
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
 
