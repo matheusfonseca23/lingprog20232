@@ -129,17 +129,94 @@ int main()
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
 
-//9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float numero,numero1,resultado;
+
+int main()
+{
+    printf("Digite o primeiro número: ");
+    scanf("%f",&numero);
+     printf("Digite o segundo número: ");
+    scanf("%f",&numero1);
+    resultado = numero - numero1;
+    printf("A  subtração dos números é: %.2f ",resultado);
+
+    return 0;
+}
+//9. Faça um programa que leia um número real e imprima ¼ deste número.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float numero,resultado;
+
+int main()
+{
+    printf("Digite o um número: ");
+    scanf("%f",&numero);
+   
+    resultado = numero/4;
+    printf("1/4 do número apresentado é: %.2f ",resultado);
+
+    return 0;
+}
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float numero,numero1,media,numero2;
+
+int main()
+{
+    printf("Digite o primeiro número: ");
+    scanf("%f",&numero);
+     printf("Digite o segundo número: ");
+    scanf("%f",&numero1);
+     printf("Digite o terceiro número: ");
+    scanf("%f",&numero2);
+    
+    media = (numero+numero1+numero2)/3;
+    printf("A média é: %.2f ",media);
+
+    return 0;
+}
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
 //    subtração,multiplicação e divisão. Ao final, o programa
 //    deve imprimir os resultados dos cálculos.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float numero,numero1,adicao,subtracão,multiplicacao,divisao;
+
+int main()
+{
+    printf("Digite o primeiro número: ");
+    scanf("%f",&numero);
+     printf("Digite o segundo número: ");
+    scanf("%f",&numero1);
+   
+    
+    adicao = numero+numero1;
+    subtracão = numero-numero1;
+    multiplicacao = numero*numero1;
+    divisao = numero/numero1;
+    
+    
+    printf("A soma é: %.2f ",adicao);
+     printf("\nA subtração é: %.2f ",subtracão);
+      printf("\nA multiplicação é: %.2f ",multiplicacao);
+       printf("\nA divisão é: %.2f ",divisao);
+
+    return 0;
+}
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
