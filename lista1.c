@@ -239,14 +239,68 @@ int main()
 }
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float numero,resultado;
+
+int main()
+{
+    printf("Digite o saldo da sua conta poupança: ");
+    scanf("%f",&numero);
+     
+    resultado = numero*1.02;
+ 
+    printf("O novo saldo  é: %.2f ",resultado);
+     
+    return 0;
+}
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base + altura) e a área (base * altura).
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float perimetro,altura,base,area;
+
+int main()
+{
+    printf("Digite o tamanho da base do retângulo: ");
+    scanf("%f",&base);
+    printf("Digite a altura do retângulo: ");
+    scanf("%f",&altura);
+    perimetro = (base + altura) * 2;
+    area = base * altura;
+
+    printf("O perímetro do retângulo é: %.2f ",perimetro);
+    printf("\n A área do retângulo é: %.2f ",area);
+    return 0;
+}
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float produto,desconto,percentual,valordesconto,valorfinal;
+
+int main()
+{
+    printf("Qual é o valor do produto: ");
+    scanf("%f",&produto);
+    printf("Qual é percentual de desconto desejado: ");
+    scanf("%f",&desconto);
+    
+    percentual = desconto/100;
+    valordesconto = percentual * produto;
+    valorfinal = produto - valordesconto;
+
+    printf("O valor  do desconto é: %.2f ",valordesconto);
+    printf("\n O valor final do produto será: %.2f ",valorfinal);
+    return 0;
+}
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
