@@ -358,7 +358,22 @@ int main()
 //    • L = Litros de combustível consumidos
 //    Ao final, o programa deverá imprimir a distância percorrida e a
 //    quantidade de litros consumidos na viagem.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float litro,distancia;
+
+int main()
+{
+    printf("Quantos KMs teve a viagem? ");
+    scanf("%f",&distancia);
+   
+    litro  = distancia/12;
+
+    printf("Foram gastos %.f litros na viagem",litro);
+    return 0;
+}
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
 //    Para isso, o programa deve ler o valor da prestação vencida, a
 //    taxa periódica de juros e o período de atraso. Ao final, o
