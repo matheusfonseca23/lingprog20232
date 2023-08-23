@@ -305,13 +305,47 @@ int main()
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float salario,reajuste,percentual,valorfinal;
+
+int main()
+{
+    printf("Qual é o valor do seu salário? ");
+    scanf("%f",&salario);
+    printf("Qual é percentual de reajuste? ");
+    scanf("%f",&reajuste);
+    
+    percentual = (reajuste/100)+1;
+    valorfinal= percentual * salario;
+
+
+    printf("O valor  do salário será : %.2f ",valorfinal);
+    return 0;
+}
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
+float celsius,fahrenheit;
+
+int main()
+{
+    printf("Qual é a temperatura em graus celsius? ");
+    scanf("%f",&celsius);
+   
+    fahrenheit  = (9*celsius +160) / 5;
+
+    printf("A temperatura em celsius é : %.1fºC e em fahrenheit é: %.1fºF ",celsius,fahrenheit);
+    return 0;
+}
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
 //    12 km por litro de combustível. O programa deverá ler o tempo
@@ -336,7 +370,19 @@ int main()
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
 
-int main() {
-	    
-    return EXIT_SUCCESS;
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float dolar,real;
+
+int main()
+{
+    printf("Quantos dolares vc tem? ");
+    scanf("%f",&dolar);
+   
+    real  = dolar*4.86;
+
+    printf("Você tem R$: %.2f dólares que equivalem a R$: %.2f reais ",dolar,real);
+    return 0;
 }
