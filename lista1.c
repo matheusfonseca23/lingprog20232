@@ -5,113 +5,84 @@
 /*  
 Exercícios sobre os comandos básicos em C
 */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 //1. Faça um programa que imprima o seu nome.
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-int main()
+
+void questao01() 
 {
     printf("Eu me chamo Valdomiro Paes de Barro");
 
-    return 0;
 }
 
 //2. Faça um programa que imprima o produto dos valores 30 e 27.
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-float resultado;
 
-int main()
-{
+
+
+void questao02()
+ {
+    float resultado;
     resultado = 30*2;
     printf("O resultado é %.2f",resultado);
-
-    return 0;
 }
 
 //3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-float media;
-
-int main()
+void questao03()
 {
+    float media;
+
     media = (5+8+12)/3;
     printf("A média é %.2f",media);
 
-    return 0;
 }
 
 //4. Faça um programa que leia e imprima um número inteiro.
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-int numero;
-
-int main()
+void questao04()
 {
+    int numero;
     printf("Digite um número: ");
     scanf("%d",&numero);
     printf("O número apresentado é: %d",numero);
 
-    return 0;
 }
 //5. Faça um programa que leia dois números reais e os imprima.
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-int numero,numero1;
-
-int main()
+void questao05()
 {
+    int numero,numero1;
     printf("Digite o primeiro número: ");
     scanf("%d",&numero);
      printf("Digite o segundo número: ");
     scanf("%d",&numero1);
     printf("Os números apresentados são: %d e %d",numero,numero1);
-
-    return 0;
 }
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-int numero,antecessor,sucessor;
-
-
-int main()
+void questao06()
 {
+    int numero,antecessor,sucessor;
     printf("Digite o primeiro número: ");
     scanf("%d",&numero);
   antecessor= numero-1;
   sucessor= numero+1;
     printf("O número apresentado foi: %d, o eu antecessor é: %d, e o seu sucessor é: %d",numero,antecessor,sucessor);
 
-    return 0;
+    
 }
 
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
-
-#include <stdio.h>
-char nome[50], end[50],tel[50];
-int main()
+void questao07()
 {
+    char nome[50], end[50],tel[50];
     printf("Digite seu nome: ");
     scanf(" %50[^\n]",&nome);
     printf("Digite seu endereço: ");
@@ -123,29 +94,21 @@ int main()
     printf("\nEndereço: %s",end);
      printf("\nTelefone: %s",tel);
 
-    return 0;
 }
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-float numero,numero1,resultado;
-
-int main()
-{
+void questao08()
+{ 
+    float numero,numero1,resultado;
     printf("Digite o primeiro número: ");
     scanf("%f",&numero);
      printf("Digite o segundo número: ");
     scanf("%f",&numero1);
     resultado = numero - numero1;
     printf("A  subtração dos números é: %.2f ",resultado);
-
-    return 0;
 }
+
 //9. Faça um programa que leia um número real e imprima ¼ deste número.
 #include <stdio.h>
 #include <stdlib.h>
@@ -380,7 +343,15 @@ int main()
 //    programa deve imprimir o valor da prestação atrasada, o período
 //    de atraso, os juros que serão cobrados pelo período de atraso, o
 //    valor da prestação acrescido dos juros. Considere juros simples.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float 
+int main{ 
 
+    printf("Qual é o valor da prestação vencida?");
+    return 0;
+}
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
@@ -389,10 +360,10 @@ int main()
 #include <stdlib.h>
 #include <math.h>
 
-float dolar,real;
+
 
 int main()
-{
+{float dolar,real;
     printf("Quantos dolares vc tem? ");
     scanf("%f",&dolar);
    
